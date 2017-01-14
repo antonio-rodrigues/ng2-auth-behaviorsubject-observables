@@ -1,0 +1,15 @@
+<div>
+  <h2>
+    {{title}}
+  </h2>
+
+  <h3>User Logged in: [ {{(isLoggedIn | async)}} ]</h3>
+  <ul>
+    <li *ngIf="!(isLoggedIn | async)" (click)="authService.login()">
+      <button>Login</button>
+    </li>
+    <li *ngIf="(isLoggedIn | async)" (click)="authService.logout()">
+      <button>Logout</button>
+    </li>
+  </ul>
+</div>

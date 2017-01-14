@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+  padding: 10px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.box {
+  width: 100%;
+  flex: 1 0 auto;
+  display: inline-block;
+  border: 1px solid coral;
+  margin: 4px;
+  padding: 10px;
+}
